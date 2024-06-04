@@ -1,0 +1,28 @@
+Each Sunday, a newspaper agency sells x copies of a certain newspaper for Rs.a per copy. The cost to the agency of each newspaper is Rs.b. The agency pays a fixed cost for storage, delivery and so on of Rs.100 per Sunday. The newspaper agency wants to calculate the profit obtained on Sundays. Can you please help them out by writing a program to compute the profit given x, a and b.
+Sample Input 0
+
+1000
+2
+1
+Sample Output 0
+
+900
+
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    int a,b,x;
+    scanf("%d%d%d",&x,&a,&b);
+    int p;
+   int sp=x*a;
+    int cp=b*x;
+    p=sp-(cp)-100;
+    printf("%d",p);
+    return 0;
+}
