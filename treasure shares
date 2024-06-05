@@ -1,0 +1,47 @@
+ Blackbeard and his three pirates found a treasure of gold coins. Long Ben too joined them. They decided to share the treasure. Blackbeard agreed to give x% share for Long Ben. He then decided to take y% share from the remaining treasure. His other pirates will share the remaining gold coins equally. Write a program to compute their share's.
+
+Input Format
+
+Input consists of 3 integers. The first input corresponds to the number of gold coins in the treasure. The second input corresponds to Ben's share percentage and the last input is Blackbeard's share percentage.
+
+Constraints
+
+1<=n<=10^7
+
+Output Format
+
+The output consists of three integers. The first output integer corresponds to Long Ben's share. The second integer corresponds to Blackbeard's share. The last integer corresponds to other pirates share.
+
+Sample Input 0
+
+729
+65
+87
+Sample Output 0
+
+473
+222
+11
+
+
+
+#include <stdio.h>
+
+#include <string.h>
+
+#include <math.h>
+
+#include <stdlib.h>
+
+int main(){
+​int gc;
+    float bs,bbs;
+    scanf("%d %f%f",&gc,&bs,&bbs);
+    int pbs=(int)(bs*gc)/100;
+    int pbbs=(int)(bbs*(gc-pbs))/100;
+    int ps3=(int)(gc-pbs-pbbs)/3;
+    printf("%d\n",pbs);
+    printf("%d\n",pbbs);
+    printf("%d",ps3);
+return 0;}
+
