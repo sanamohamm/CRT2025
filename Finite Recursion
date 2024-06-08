@@ -1,0 +1,14 @@
+#include <stdio.h>
+void fn(int c){
+    if(c>10)    //if(c<=10){
+ return;       //remove return
+ printf("good\n");//same stmt
+        c++;       //same stmt
+        fn(c);     //same
+                  // }
+}
+int main() {
+  int c=1;
+ fn(c);
+    return 0;
+}
