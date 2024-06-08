@@ -1,0 +1,10 @@
+#include <stdio.h>
+int main() { 
+    int a,i;
+    for(;;){
+        scanf("%d",&a);
+        if(a==-1)  //loop stops when enter -1
+        break;
+    }
+    return 0;
+}
