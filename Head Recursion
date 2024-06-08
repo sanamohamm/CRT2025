@@ -1,0 +1,14 @@
+#include <stdio.h>
+void fn(int n){
+   if(n>=1){
+        fn(n-1);
+       printf("%d ",n);
+    }
+}
+int main() {    // first fn calls, then stmt executes
+  int n;
+ printf("enter n:");
+ scanf("%d",&n);
+ fn(n);
+    return 0;
+}
