@@ -1,0 +1,33 @@
+Given an integer n, write a program that returns "yes" if binary representation of n is palindrome else return "no".
+
+OUTPUT :
+123 binary value is 1111011
+That's why output is "no"
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int b=0,n=0,a,t,r;
+    scanf("%d",&a);
+    while(a>0){
+        b=b*10+(a%2);
+            a=a/2;
+    }
+           t=b; 
+    while(b>0){
+        r=b%10;
+        n=n*10+r;
+        b=b/10;
+    }
+   
+    if(t==n){
+        printf("yes");
+    }
+    else
+        printf("no");
+    
+    return 0;
+}
